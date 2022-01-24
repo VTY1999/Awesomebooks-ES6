@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Awesome Books</title>   
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+          <a class="navbar-brand" href="#">Awesome Books</a>
+          <div id="navbarNav">
+          <ul class="nav-ul">
+            <li class="nav-item">
+              <a class="nav-link" id="List" href="#">List</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" id="add-new" href="#">Add new</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contact" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        </nav>
+        <p class="date"></p>
+      </header>
+      <main>
+        
+        <h2 class="list-head">All awesome books</h2>
+    <div id="book-list">
+      
+    
+    </div>
+    
+    <h3 class="add-book-title">Add a new book</h3>
+        
+        <form id="form" action="#">
+          <input class="form-inputs" type="text" id="btitle" name="btitle" placeholder="Title" required><br>
+          <input class="form-inputs1" type="text" id="author" name="author" placeholder="Author" required><br>
+          <input class ="form-btn" type="submit" value="Add">
+        </form>
+      </main>
+      <div class="contact-info">
+        <div class="contact-con">
+        <h4 id="contact-head">Contact information</h4>
+        <p class="text-center">Do you have any question or you just want to say "Hello"?<br>
+        <span class="text-center-span d-flex flex-row">You can reach out to us!</span></p>
+        <ul class="contact-list">
+          <li>Our e-mail: mail@gmail.com</li>
+          <li>Our phone number: +00 (435) 863 4422</li>
+          <li>Our address: Pine Street 22, 84503 City, Zakovia</li>
+        </ul>
+      </div>
+      </div>
+
+      <footer>
+        <div class="copyright">Copyright</div>
+      </footer>
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>
