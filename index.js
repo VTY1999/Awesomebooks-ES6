@@ -1,3 +1,4 @@
+/* eslint-disable no-multi-assign */
 // eslint-disable-next-line max-classes-per-file
 import currentDate from './modules/date.js';
 import Book from './modules/books.js';
@@ -38,7 +39,7 @@ class UI {
 class Store {
   static getBooks() {
     let books;
-    if (localStorage.getItem('books') !== null) {
+    if (localStorage.getItem('books') === null) {
       books = [];
     } else {
       books = JSON.parse(localStorage.getItem('books'));
@@ -75,7 +76,8 @@ document.querySelector('#form').addEventListener('submit', (e) => {
 
   const title = document.querySelector('#btitle').value;
   const author = document.querySelector('#author').value;
-
+  document.querySelector('.form-inputs').value = '';
+  document.querySelector('.form-inputs1').value = '';
   const book = new Book(title, author);
   UI.addBookToList(book);
 

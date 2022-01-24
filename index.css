@@ -52,6 +52,12 @@ form {
   line-height: 20px;
 }
 
+.form-inputs1 {
+  width: 40%;
+  border: 1px solid #000;
+  line-height: 20px;
+}
+
 .form-btn {
   margin-left: 32%;
   background-color: #8801be;
